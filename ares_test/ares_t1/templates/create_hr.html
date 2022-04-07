@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>营销活动冒烟测试用例</title>
+    <h1>营销活动冒烟测试用例</h1>
+    <style>
+    select { width: 300px;}
+</style>
+</head>
+<body style="text-align:center">
+    <div>
+        <form action="http://127.0.0.1:8000/a" method="get">
+            <div>
+                <!--下拉框
+                 http://127.0.0.1:8000/a?a=hcyx_20014-->
+                <select name="a">
+                     <!--if {{aa}}
+                        {% for job in aa %}
+                            <option value={{job.name}}>{{job.value}}</option>
+                    {% endfor %}-->
+                    <option value="hcyx_20014">C端集印花冒烟测试</option>
+                    <option value="hcyx_20008">省钱红包（付费券包)</option>
+                    <option value="hcyx_20009">抽奖活动</option>
+                    <option value="hcyx_20010">新人券包</option>
+                    <option value="hcyx_20011">送券活动</option>
+                    <option value="hcyx_20012">抽奖活动</option>
+                    <option value="hcyx_20013">集虎符印花</option>
+                    <option value="hcyx_20015">C端果园--编辑活动规则</option>
+                    <option value="hcyx_20016">拼手气活动</option>
+                    <option value="hcyx_20017">充值有礼B端</option>
+                </select>
+                <input  style="font-family:arial;color:green;font-size:20px;" type="submit" value="执行用例">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>营销活动冒烟测试用例</title>
+    <h1>营销活动冒烟测试用例</h1>
+    <style>
+    select { width: 300px;}
+</style>
+    
+</head>
+<body style="text-align:center">
+    <div>
+        <form action="http://127.0.0.1:8000/" method="get">
+            <div>
+                <!-- 下拉框
+                 http://127.0.0.1:8000/a?a=hcyx_20014-->
+                <p>
+                    执行的测试计划id是：{{ urlt1 }}
+                </p>
+                <input style="font-family:arial;color:red;font-size:20px;" type="submit" value="返回到执行页面">
+                <button style="font-family:arial;color:green;font-size:20px;" onclick="window.open('{{ urlt2 }}')" type="button" id="add" target="_blank">查看报告</button>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+</html>
